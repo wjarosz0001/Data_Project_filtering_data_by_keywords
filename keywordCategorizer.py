@@ -56,7 +56,7 @@ counts = df["Category"].value_counts()
 plt.figure(figsize=(10,5))
 ax = counts.plot(kind="bar")
 
-plt.title("Count of Records by Category")
+plt.title("Breached Data types by Category")
 plt.xlabel("Category")
 plt.ylabel("Count")
 plt.ylim(0, max(counts) + 20)
@@ -77,7 +77,7 @@ buf.close()
 html = f"""
 <html>
 <head>
-<title>Category Classification Report</title>
+<title>Most Commonly Breached Data types by Category</title>
 <style>
 body {{ font-family: Arial, sans-serif; margin: 20px; }}
 h1 {{ font-size: 22px; }}
@@ -86,7 +86,7 @@ table, th, td {{ border: 1px solid black; border-collapse: collapse; padding: 5p
 </style>
 </head>
 <body>
-<h1>Category Classification Summary</h1>
+<h1>Most Commonly Breached Data types by Category</h1>
 <p><b>Total Records:</b> {len(df)}</p>
 
 <h2>Bar Chart</h2>

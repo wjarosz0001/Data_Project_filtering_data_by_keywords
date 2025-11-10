@@ -59,7 +59,7 @@ ax = counts.plot(kind="bar")
 plt.title("Count of Records by Category")
 plt.xlabel("Category")
 plt.ylabel("Count")
-plt.ylim(0, 250)
+plt.ylim(0, max(counts) + 20)
 plt.tight_layout()
 
 # Add labels above bars
